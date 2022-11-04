@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Barlow&family=Montserrat');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #d1d5db ;
+    font-family: Barlow, sans-serif;
+    overflow: auto;
+}
+
+.header{
+    background-color: white;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 8px 8px #64748b;
+}
+
+h1{
+    text-align: center;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#addBtn{
+    margin-top: 25px;
+    border-radius: 10px;
+    background-color: #d1d5db;
+    width: 200px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+#addBtn:hover{
+    background-color: #e5e7eb ;
+}
+
+.popUp{
+    z-index: 10;
+    background-color: white;
+    text-align: center;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0) ;
+    background-color: #a1a1aa;
+    border-radius: 10px;
+    transition: 0.2s ease-in-out;
+}
+
+.popUp.active{
+    transform: translate(-50%, -50%) scale(1);
+}
+
+form{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.upper{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.userInput{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input#title, input#author, input#pages{
+    height: 40px;
+    width: 250px;
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+.checkRead{
+    font-size: 20px;
+    padding-top:5px;
+    font-weight: bolder;
+}
+
+input[type=checkbox]{
+    transform: scale(1.4);
+}
+
+#submit{
+    border: none;
+    border-radius: 10px;
+    width: 250px;
+    height: 40px;
+    margin: 10px;
+    background-color: #9fff9c;
+    font-size: 15px;
+    font-weight: bolder;
+}

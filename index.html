@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+    <title>Library</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Welcome To Your Personal Space</h1>
+    </div>
+    <div class="btn-container">
+        <button id="addBtn">Add New Book+</button>
+    </div> 
+    <div class="popUp" id="popUpModal">
+        <form action="/apps.js" id="form">
+            <div class="upper">
+                <div class="title">New Book</div>
+            </div>
+            <div class="userInput">
+                <input type="text" id="title" name="title" placeholder="Book Title">
+                <input type="text" id="author" name="author" placeholder="Author">
+                <input type="text" id="pages" name="pages" placeholder="Pages">
+            </div>
+            <div class="checkRead">
+                <label for="read">Read:</label>
+                <input type="checkbox" id="read" name="read" value=yes>
+            </div>
+            <button id="submit" form="form">Add</button>
+        </form>
+    </div>
+    <div class="library-container">
+
+    </div>
+</body>
+</html>
